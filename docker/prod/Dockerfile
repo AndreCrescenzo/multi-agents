@@ -7,7 +7,7 @@ LABEL Description="Framework for multiagent systems development in Python. This 
 ENV  FLASK_ENV=production 
 ENV  FLASK_DEBUG=0
 
-RUN apt-get update && apt-get install -y python-pip python-dev build-essential python-pyside python-qt4reactor
+RUN apt-get update && apt-get install -y python-dev build-essential
 
 COPY . /app
 WORKDIR /app
